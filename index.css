@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-navy: #14213D;
+  --color-paper: #F6F3EC;
+  --color-teal: #0E7C66;
+  --color-amber: #F2B134;
+  --color-coral: #D9480F;
+  --color-navy-light: #1e2f54;
+  --color-teal-light: #e6f5f1;
+  --color-amber-light: #fef7e6;
+  --color-coral-light: #fdeee8;
+
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-paper);
+  color: var(--color-navy);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
